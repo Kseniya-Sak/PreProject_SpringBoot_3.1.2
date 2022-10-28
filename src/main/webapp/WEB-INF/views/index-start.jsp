@@ -12,7 +12,6 @@
         <th>NAME</th>
         <th>LAST NAME</th>
         <th>AGE</th>
-        <th>BIRTHDAY</th>
     </tr>
     <c:forEach var="user" items="${allUsers}">
         <c:url var="updateButton" value="/updateUser">
@@ -26,7 +25,6 @@
                 <td>${user.name}</td>
                 <td>${user.lastName}</td>
                 <td>${user.age}</td>
-                <td>${user.birthDay}</td>
             <td >
                 <input type="button" value="Update" onclick="window.location.href = '${updateButton}'">
             </td>
